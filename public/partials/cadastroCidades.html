@@ -1,0 +1,13 @@
+<h1>Cadastro de Cidades</h1>
+		<form id="formCadastroCidade" ng-submit="cadastrarCidade()">
+			<label for="nome">Nome:</label>
+
+			<input id="nome" name="nome"  type="text" ng-model="cidade.nome" class="form-control"/><br/>
+			<label for="estado">Estado:</label>
+			<select id="estado" name="estado"
+			class="form-control"
+			 ng-model="cidade._id"
+			  ng-options= "estado._id as estado.nome for estado in estados">
+			 </select><br/>
+			<input type="submit" value="Cadastrar" id="btnCadastro" class="btn btn-primary"/>
+		</form>

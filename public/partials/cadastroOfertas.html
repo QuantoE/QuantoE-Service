@@ -1,0 +1,23 @@
+<h1>Cadastro de Ofertas</h1>
+		<form id="formCadastroOfertas" ng-submit="cadastrarOferta()">
+			<label for="produto">Produto:</label>
+			<select id="produto" name="produto"
+			class="form-control"
+			 ng-model="oferta.produto"
+			  ng-options= "produto.descricao as produto.descricao for produto in produtos">
+			 </select>
+			<br/>
+			<label for="estabelecimento">Estabelecimento:</label>
+			<select id="estabelecimento"
+			name="estabelecimento"
+			class="form-control" 
+			 ng-model="oferta._idEstabelecimento"
+			  ng-options= "estabelecimento._id as estabelecimento.nome for estabelecimento in estabelecimentos">
+
+			 </select><br/>
+			 <label for="valor">Valor:</label>
+			 <input id="valor" name="valor" type="text" ng-model="oferta.valor" class="form-control"/><br/>
+
+
+			<input type="submit" value="Cadastrar" id="btnCadastro" class="btn btn-primary"/>
+		</form>

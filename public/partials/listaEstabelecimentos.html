@@ -1,0 +1,24 @@
+<div class="table-responsive">
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th >Nome</th>
+			<th >Cidade</th>
+			<th >Usuario Responsável pelo Cadastro</th>
+			<th >Data de Inclusão</th>
+		</tr>
+		<tr ng-repeat="estabelecimento in estabelecimentos">
+			<td>
+				{{estabelecimento.nome}}
+			</td>
+			<td>
+				{{estabelecimento.cidade}}
+			</td>
+				<td>
+				{{estabelecimento.usuario}}
+			</td>
+				<td>
+				{{estabelecimento.updated}}
+			</td>
+		</tr>
+	</table>
+</div>

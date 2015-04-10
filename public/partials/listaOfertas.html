@@ -1,0 +1,20 @@
+<div class="table-responsive">
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th >Estabelecimento</th>
+			<th >Produto</th>
+			<th >Valor</th>
+		</tr>
+		<tr ng-repeat="oferta in ofertas">
+			<td>
+				{{estabelecimento}}
+			</td>
+			<td>
+				{{oferta.produto}}
+			</td>
+				<td>
+				{{oferta.valor}}
+			</td>
+		</tr>
+	</table>
+</div>

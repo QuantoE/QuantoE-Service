@@ -1,0 +1,24 @@
+<div class="table-responsive">
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th >Descricao</th>
+			<th >Departamento</th>
+			<th >Usuario Responsável pelo Cadastro</th>
+			<th >Data de Inclusão</th>
+		</tr>
+		<tr ng-repeat="produto in produtos">
+			<td>
+				{{produto.descricao}}
+			</td>
+			<td>
+				{{produto.departamento}}
+			</td>
+				<td>
+				{{produto.usuario}}
+			</td>
+				<td>
+				{{produto.updated}}
+			</td>
+		</tr>
+	</table>
+</div>

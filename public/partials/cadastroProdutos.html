@@ -1,0 +1,16 @@
+<!-- public/partials/cadastroProdutos.html -->
+<h1>Cadastro de Produtos</h1>
+		<form id="formCadastroProduto" ng-submit="cadastrarProduto()">
+			<label for="descricao">Descrição:</label>
+				<input id="descricao" name="descricao" type="text" ng-model="produto.descricao" class="form-control"/><br/>
+			
+			<label for="departamento">Departamento:</label>
+			<select id="departamento" name="departamento"
+			class="form-control" 
+			 ng-model="produto.departamento"
+			  ng-options= "departamento.descricao as departamento.descricao for departamento in departamentos">
+
+			 </select></br>
+
+			 <input type="submit" value="Cadastrar" id="btnCadastro" class="btn btn-primary"/>
+		</form>
